@@ -15,7 +15,7 @@
    2. To install instio type command: istioctl install --set profile=demo -y   .
    3. Use the following URL for above two steps: https://istio.io/latest/docs/setup/getting-started/
    4. The above steps would create 3 pods under namespace istio-system, one for ingress, one for egress and one for control plane. It would also create 3 services, mapped to the already created pods. Note only the ingress service will have a public ip here, meaning it would be the only service that would be open to the world for communication. The rest 2 would get internal ips.
-   5. At this point, for all the services added infront of your microservices pods, make their type = CLusterIp. This would make these services unavailable to be contacted bythe external world.(note: this step is not mandatory but preferred)
+   5. At this point, for all the services added infront of your microservices pods, make their type = ClusterIp. This would make these services unavailable to be contacted by the external world.(note: this step is not mandatory but preferred)
    6. Create a gateway resource on your eks cluster. For eg. you could configure this gateway to listen for http request on port 80 and https request on port 443.
    7. Create one virtual service for each service deployed in the kubernetes cluster. Here you can add configuration for domain/route to service mapping.
 

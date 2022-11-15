@@ -6,7 +6,7 @@
    URL: https://github.com/shubham-arora-18/eks-terraform-infra
 4. How to add istio ingress controller to manage multiple apis deployed on the kubernetes cluster:
    1. Istio ingress controller can be used as an entry point loadbalancer to our kubernetes cluster.
-   2. IstioArch1 and IstioArch2 Images show the architecture, where Istio ingress controller will be placed and will interact with internal kubernetes services.
+   2. IstioArch1 and IstioArch2 Images(in this repository) show the architecture, where Istio ingress controller will be placed and will interact with internal kubernetes services.
    3. We now instead of defining our kubernetes services type as LoadBalancer/NodePort will define our services type as ClusterIp, this will disable any external    interaction with service. And all the interaction with these services would now go through Istio ingress controller.
 
    Steps to do it-> 
